@@ -69,3 +69,11 @@ def cheapest(options: list) -> object | None:
     An option can be anything with a total() method, not only an Order.
     """
     raise NotImplementedError("core: return the option whose total() is smallest")
+    tea = PromoItem("Thai Tea", 40)
+
+print(tea.cost(2))
+print(tea.cost(3))
+print(tea.cost(6))
+order = Order("A")
+order.add(MenuItem("Pad Thai", 60), 2)
+print(order.total())
