@@ -87,7 +87,7 @@ if len(options) == 0:
         return None
     best = options[0]
     for option in options:
-        if option.total() < best.total():  # "<" so the first one wins a tie
+        if option.total() < best.total():
             best = option
     return best
 
