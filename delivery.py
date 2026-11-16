@@ -23,7 +23,7 @@ class MenuItem:
         self._price = value
 
     def __repr__(self) -> str:
-        return f"MenuItem('{self.name}', {self.price})")
+        return f"MenuItem('{self.name}', {self.price})"
 
     def __eq__(self, other: object) -> bool:
         if not isinstance(other, MenuItem):
