@@ -83,16 +83,16 @@ class Order:
 
 
 def cheapest(options: list) -> object | None:
-if len(options) == 0:
+if len(options)==0:
         return None
-    best = options[0]
+    best=options[0]
     for option in options:
-        if option.total() < best.total():
-            best = option
+        if option.total()<best.total():
+            best=option
     return best
 
 if __name__=="__main__":
-    tea = PromoItem("Thai Tea", 40)
+    tea=PromoItem("Thai Tea", 40)
     print(tea.cost(2))
     print(tea.cost(3))
     print(tea.cost(6))
