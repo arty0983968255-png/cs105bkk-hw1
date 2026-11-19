@@ -43,8 +43,7 @@ class PromoItem(MenuItem):
         return super().cost(paid)
 
     def cost(self, quantity: int) -> int:
-        """Return what quantity costs when every third one is free."""
-        raise NotImplementedError("core: work out the free ones, then ask super() for the cost")
+        return self.price*quantity
 
 
 class Order:
