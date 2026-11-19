@@ -83,7 +83,7 @@ class Order:
 
 
 def cheapest(options: list) -> object | None:
-if len(options)==0:
+    if len(options)==0:
         return None
     best=options[0]
     for option in options:
