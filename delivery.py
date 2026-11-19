@@ -41,10 +41,6 @@ class PromoItem(MenuItem):
         paid = quantity - free
         return super().cost(paid)
 
-    def cost(self, quantity: int) -> int:
-        return self.price*quantity
-
-
 class Order:
     free_delivery_from = 300
 
